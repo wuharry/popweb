@@ -1,0 +1,15 @@
+.contain{
+    width: 100%;
+    min-width: 100rem;
+    height: 30rem;
+    background-color: white;
+}
+.childTitle{
+font-size: 1em;
+letter-spacing:.2em;
+line-height: 1.5;
+}
+.theme{
+width: 15em;
+height: 30em;
+}

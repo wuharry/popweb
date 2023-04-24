@@ -8,7 +8,7 @@
     margin-left: 5vh;
     margin-top: 2vh;
     color: white;
-    font-weight: 900;
+    font-weight: 1500;
     font-family: monospace;
 }
 
@@ -29,4 +29,14 @@
     border: 0;
     padding: 0;
     height: 24px;
+}
+
+@media screen and (max-width:600px) {
+    .Navright {
+        width: 10em;
+    }
+    .Nav-font{
+        display: none;
+    }
+    
 }

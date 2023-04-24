@@ -1,0 +1,34 @@
+.buttomframe {
+    width: 17em;
+    height: 4em;
+    border-radius: 2px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 900;
+}
+.buttomframe-blcak{
+    width: 17em;
+    height: 4em;
+    border-radius: 2px;
+    border: 1px solid black;
+    color: black;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 900;
+}
+.buttomframe:hover{
+    background: orange;
+}
+.buttomframe-blcak:hover{
+    background: rgb(235, 122, 81);
+    color: white;
+}
+
+.buttomframe>button {
+    display: none;
+    width: 17em;
+    height: 4em;
+    border-radius: 2px;
+}
