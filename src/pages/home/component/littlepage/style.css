@@ -1,15 +1,37 @@
-.contain{
-    width: 100%;
-    min-width: 100rem;
-    height: 30rem;
-    background-color: white;
+.contain {
+  width: 100%;
+  min-width: 100rem;
+  height: 28rem;
+  background-color: white;
+  overflow: hidden;
 }
-.childTitle{
-font-size: 1em;
-letter-spacing:.2em;
-line-height: 1.5;
+.childTitle {
+  line-height: 1.5;
+  color: #1f222c;
+  font-size: 1.1285714286em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
-.theme{
-width: 15em;
-height: 30em;
+.Title > h2 {
+  text-transform: lowercase;
+  color: #1f222c;
+  margin-bottom: 1em;
+  font-size: 2.5714285714em;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  margin: 0 0 0.4em;
+}
+.theme {
+  width: 100%;
+  height: 30em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.pictures {
+  width: auto;
+  height: auto;
+  transform: rotate(-45deg);
 }

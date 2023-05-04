@@ -1,10 +1,11 @@
+/* CSS 放置風格為由外到內&&上到下 */
 .body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100rem;
+  height: 100%;
   overflow: hidden;
-  background: linear-gradient(to right, #20242e, #464c60)
+  background: linear-gradient(to right, #20242e, #464c60);
 }
 
 .context {
@@ -17,7 +18,7 @@
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  align-items:baseline;
+  align-items: baseline;
   flex: 4 1;
   margin-left: 3.5em;
   padding-left: 1em;
@@ -25,8 +26,8 @@
   max-width: 700px;
 }
 
-.maincontent>h1 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.maincontent > h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-overflow: ellipsis;
   font-size: 3.2142857143rem;
   line-height: 1.2;
@@ -36,7 +37,7 @@
   color: white;
 }
 
-.maincontent>p {
+.maincontent > p {
   font-size: 1.2142857143rem;
   text-overflow: ellipsis;
   line-height: 1.5;
@@ -46,7 +47,7 @@
   color: white;
 }
 
-.maincontent>p>a {
+.maincontent > p > a {
   color: darkkhaki;
   text-decoration: underline;
 }
@@ -56,46 +57,31 @@
   display: flex;
   flex: 10 1;
 }
-.Notes{
+.imgescontain {
   margin-bottom: 10%;
   position: relative;
   width: 100%;
-}
-.Notepad {
-  position: absolute;
-  background: url('../../../public/images/hero_desktop_frame.svg')0 0 no-repeat;
-  background-size: 200px 200px;
-  max-width: 100%;
   height: auto;
-  top: 1em;
-  left: 5em;
-  overflow: hidden;
 }
-
-
-/* .Notepad>picture {
-  position: absolute;
-  top: 1em;
-  left: -4.8em;
-  width: 50em;
-  height: 33.6em;
-} */
-
-.Nopadcontain>img {
+.Noteframe {
   width: 100%;
   height: auto;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
-
-
-.mobile {
+.Note {
+  width: 80%;
+  height: 101%;
+  background: url("../../../public/images/hero_desktop_frame.svg") 0 0 no-repeat;
+  background-size: contain;
   position: absolute;
-  width: 14em;
-  height: 30em;
-  background: url('../../../public/images/hero_mobile_frame.svg')0 0 no-repeat;
-  z-index: 10;
-  background-size: cover;
+  left: 7.1em;
+  top: 0em;
+  z-index: 2;
+  overflow: hidden;
+}
+.Nopadcontain > img {
+  width: 79.7%;
+  height: auto;
+  border-radius: 10px;
 }
 
 .mobileframe {
@@ -103,69 +89,82 @@
   top: 7em;
   left: 55em;
 }
+.mobile {
+  background: url("../../../public/images/hero_mobile_frame.svg") 0 0 no-repeat;
+  background-size: contain;
+  overflow: hidden;
+  position: absolute;
+  width: 14.3em;
+  height: 30em;
+  z-index: 4;
+}
 
 .mobilepicture {
   display: block;
   position: absolute;
+  z-index: 3;
   width: 13.6em;
   top: 0.4em;
   left: 0.42em;
   height: 29.3em;
   border-radius: 12px;
 }
-.middle{
+.middle {
   width: 100%;
   margin-top: 15rem;
 }
 
-@media screen and (max-width:750px) {
-  .body{
-    min-width: 100vh;
-  }
+/* 小型裝置 */
+@media screen and (max-width: 450px) {
   .context {
-    margin-top: 2.5em;
-    height: 100rem;
+    flex-direction: column-reverse;
+    margin-top: 0;
+    justify-content: flex-start;
+    height: 50em;
   }
 
-  .context .Notes {
-    order: 0;
-    flex: 5;
+  .maincontent {
+    margin-top: 1em;
+    margin-left: 1em;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .maincontent > h1 {
+    font-size: 2.1428571429em;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 0.02em;
+  }
+  .maincontent > p {
+    margin-bottom: 2.5em;
+    margin-top: 2em;
   }
 
-  .context .maincontent {
-    position: relative;
-    flex: 5;
-    order: 1;
-  }
-  .Notepad {
-    width: 32em;
-    left: 3em;
-    background-size: contain;
+  .imges {
+    flex: 0 1;
+    padding-top: 15px;
   }
 
-  .Notepad>picture {
-    width: 77%;
-    height: 38%;
-    top: 0.3em;
-    left: -5.2em;
+  .Note {
+    left: 2.2em;
   }
 
   .mobileframe {
-    position: absolute;
-    top: 5em;
-    left: 24em;
+    width: 100%;
+    height: auto;
+    top: 3em;
+    left: 17em;
   }
-  
   .mobile {
-    width: 7.6em;
-    height: 14.3em;
-  }
+    width: 22%;
+    height: 9em;
+    left: 0.2em;
 
-  .mobilepicture {
-    top: 0.19em;
-    left: 0.1em;
-    width: 7.2em;
-    height: 14.3em;
-    border-radius: 7px;
+  }
+  .mobilepicture{
+    width: 17.5%;
+    height: auto;
+    border-radius: 5px;
+    top: 0.3em;
   }
 }

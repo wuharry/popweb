@@ -7,8 +7,9 @@ const Home = () => {
     <>
       <div className="body">
         <NavigationBar />
-        {/* 內文區 */}
+
         <div className="context">
+          {/* 內文區 */}
           <div className="maincontent">
             <h1>a new way to experience online invitations</h1>
             <p>
@@ -17,17 +18,20 @@ const Home = () => {
             </p>
             <Buttons data={"CREATE AN INVATION"} color={"white"} />
           </div>
+          {/* 放置圖片的地區 */}
           <div className="imges">
-            <div className="Notes">
-              <div className="Notepad">
-                {/* <picture
+            <div className="imgescontain">
+              <div className="Noteframe">
+                <div className="Note"></div>
+                <picture
                   className="Nopadcontain"
                   srcset="./images/hero_desktop_image@0.75x.avif'"
                   media="(min-width: 800px)"
                 >
                   <img src="./images/hero_desktop_image@1x.avif" />
-                </picture> */}
+                </picture>
               </div>
+
               <div className="mobileframe">
                 <div className="mobile"></div>
                 <div className="mobilecontain">
@@ -44,7 +48,11 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="middle">{/* <LittlePage /> */}</div>
+          {/* 放置小分業 */}
+          <div className="middle">
+            <LittlePage />
+            
+            </div>
           {/* footer */}
         </div>
       </div>

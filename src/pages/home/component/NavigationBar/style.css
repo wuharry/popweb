@@ -1,6 +1,7 @@
 .layout {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .Nav-Title {
@@ -33,7 +34,7 @@
 
 @media screen and (max-width:600px) {
     .Navright {
-        width: 10em;
+        width: 5em;
     }
     .Nav-font{
         display: none;
