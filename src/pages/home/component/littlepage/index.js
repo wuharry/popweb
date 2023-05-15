@@ -4,15 +4,14 @@ const LittlePage = ({ context, buttonON }) => {
   return (
     <>
       <div className="contain">
-        <div className="topsec">
-          <div className="Title">
-            <span className="childTitle">
-              <h3>FRESH SPRING COLORS + YOUR PERSONAL PHOTOS =</h3>
-            </span>
-            <h2>the perfect online invitation</h2>
-          </div>
-          <Buttons data={"CREATE AN INVATION"} color={"blcak"} />
+        <div className="Title">
+          <span className="childTitle">
+            <h3>FRESH SPRING COLORS + YOUR PERSONAL PHOTOS =</h3>
+          </span>
+          <h2>the perfect online invitation</h2>
         </div>
+        <Buttons data={"CREATE AN INVATION"} color={"blcak"} />
+
         <div className="theme">
           {/* theme1 */}
           <div className="pictures">
@@ -93,33 +92,31 @@ const LittlePage = ({ context, buttonON }) => {
             </picture>
           </div>
         </div>
-        <div className="theme-icon">
-          <div>
-            {/* theme1 icon */}
-            <picture
-              srcset="./images/theme_1_thumbnail@1x.avif"
-              media="(min-width: 800px)"
-            ></picture>
+        {/* 泡泡icon區 */}
+        <div className="topsec">
+          <div className="buboicon1">
+            <span className="bubo1_left"></span>
+            <span className="bubo1_right"></span>
           </div>
-          <div>
-            {/* theme2 icon*/}
-            <picture></picture>
+          <div className="buboicon2">
+            <span className="bubo2_left"></span>
+            <span className="bubo2_right"></span>
           </div>
-          <div>
-            {/* theme3 icon*/}
-            <picture></picture>
+          <div className="buboicon3">
+            <span className="bubo3_left"></span>
+            <span className="bubo3_right"></span>
           </div>
-          <div>
-            {/* theme4 icon*/}
-            <picture></picture>
+          <div className="buboicon4">
+            <span className="bubo4_left"></span>
+            <span className="bubo4_right"></span>
           </div>
-          <div>
-            {/* theme5icon */}
-            <picture></picture>
+          <div className="buboicon5">
+            <span className="bubo5_left"></span>
+            <span className="bubo5_right"></span>
           </div>
-          <div>
-            {/* theme6icon */}
-            <picture></picture>
+          <div className="buboicon6">
+            <span className="bubo6_left"></span>
+            <span className="bubo6_right"></span>
           </div>
         </div>
       </div>
