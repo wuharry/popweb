@@ -1,0 +1,46 @@
+.contain {
+  width: 100%;
+  min-width: 100rem;
+  height: 28rem;
+  background-color: white;
+  overflow: hidden;
+  text-align: center;
+  
+}
+.font-sec {
+  h2 {
+    color: #1f222c;
+    font-size: 2.5714285714em;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+    margin: 0 0 0.4em;
+    text-transform: lowercase;
+    @media screen and (max-width: 450px){
+      
+    }
+  }
+  p {
+    font-size: 1.2142857143em;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    margin: 1em 0;
+  }
+}
+
+.feature_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  -webkit-box-pack: justify;
+  align-items: stretch;
+  align-content: stretch;
+  justify-content: space-between;
+  margin-bottom: 4em;
+
+  .feature {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 20%;
+    flex: 0 1 20%;
+    text-align: center;
+  }
+}

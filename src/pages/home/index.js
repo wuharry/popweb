@@ -2,6 +2,7 @@ import "./style.css";
 import NavigationBar from "./component/NavigationBar";
 import Buttons from "../../components/Button";
 import LittlePage from "./component/littlepage";
+import LittlePage2 from "./component/littlepage2";
 const Home = () => {
   return (
     <>
@@ -48,12 +49,12 @@ const Home = () => {
               </div>
             </div>
           </div>
-          {/* 放置小分業 */}
-          <div className="middle">
-            <LittlePage />
-            
-            </div>
           {/* footer */}
+        </div>
+        {/* 放置小分業 */}
+        <div className="middle">
+          <LittlePage />
+          <LittlePage2 />
         </div>
       </div>
     </>
