@@ -9,11 +9,11 @@ const LittlePage = ({ context, buttonON }) => {
             <h3>FRESH SPRING COLORS + YOUR PERSONAL PHOTOS =</h3>
           </span>
           <h2>the perfect online invitation</h2>
+          <Buttons data={"CREATE AN INVATION"} color={"blcak"} />
         </div>
-        <Buttons data={"CREATE AN INVATION"} color={"blcak"} />
 
         <div className="theme">
-          {/* theme1 */}
+          
           <div className="pictures">
             <picture
               srcset="./images/theme_1_thumbnail@1x.avif"
@@ -21,12 +21,11 @@ const LittlePage = ({ context, buttonON }) => {
             >
               <img
                 src="./images/theme_1_thumbnail@1x.avif"
-                height="348"
-                width="265"
+
               />
             </picture>
           </div>
-          {/* theme2 */}
+ 
           <div className="pictures">
             <picture
               srcset="./images/theme_5_thumbnail@1x.avif"
@@ -34,12 +33,10 @@ const LittlePage = ({ context, buttonON }) => {
             >
               <img
                 src="./images/theme_5_thumbnail@1x.avif"
-                height="348"
-                width="265"
               />
             </picture>
           </div>
-          {/* theme3 */}
+     
           <div className="pictures">
             <picture
               srcset="./images/theme_12_thumbnail@1x.avif"
@@ -47,12 +44,10 @@ const LittlePage = ({ context, buttonON }) => {
             >
               <img
                 src="./images/theme_12_thumbnail@1x.avif"
-                height="348"
-                width="265"
               />
             </picture>
           </div>
-          {/* theme4 */}
+        
           <div className="pictures">
             <picture
               srcset="./images/theme_7_thumbnail@1x.avif"
@@ -60,12 +55,10 @@ const LittlePage = ({ context, buttonON }) => {
             >
               <img
                 src="./images/theme_7_thumbnail@1x.avif"
-                height="348"
-                width="265"
               />
             </picture>
           </div>
-          {/* theme5 */}
+        
           <div className="pictures">
             <picture
               srcset="./images/theme_9_thumbnail@1x.avif"
@@ -73,12 +66,10 @@ const LittlePage = ({ context, buttonON }) => {
             >
               <img
                 src="./images/theme_9_thumbnail@1x.avif"
-                height="348"
-                width="265"
               ></img>
             </picture>
           </div>
-          {/* theme6 */}
+         
           <div className="pictures">
             <picture
               srcset="./images/theme_6_thumbnail@1x.avif"
@@ -86,14 +77,13 @@ const LittlePage = ({ context, buttonON }) => {
             >
               <img
                 src="./images/theme_6_thumbnail@1x.avif"
-                height="348"
-                width="265"
               />
             </picture>
           </div>
         </div>
+
         {/* 泡泡icon區 */}
-        <div className="topsec">
+        {/* <div className="topsec">
           <div className="buboicon1">
             <span className="bubo1_left"></span>
             <span className="bubo1_right"></span>
@@ -118,7 +108,7 @@ const LittlePage = ({ context, buttonON }) => {
             <span className="bubo6_left"></span>
             <span className="bubo6_right"></span>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

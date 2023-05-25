@@ -110,7 +110,10 @@
   border-radius: 12px;
 }
 .middle {
-  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 15rem;
 }
 
@@ -120,7 +123,7 @@
     flex-direction: column-reverse;
     margin-top: 0;
     justify-content: flex-start;
-    height: 50em;
+    height: 45em;
   }
 
   .maincontent {
@@ -139,7 +142,9 @@
     margin-bottom: 2.5em;
     margin-top: 2em;
   }
-
+  .middle {
+    margin-top: 0;
+  }
   .imges {
     flex: 0 1;
     padding-top: 15px;

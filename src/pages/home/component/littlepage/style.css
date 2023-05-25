@@ -5,9 +5,6 @@
 }
 
 .contain {
-  /* width: 100%;
-  min-width: 100rem;
-  height: 28rem; */
   background-color: white;
   overflow: hidden;
   width: 100%;
@@ -15,6 +12,8 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  display: flex;
+  flex-direction: column;
 }
 .childTitle {
   line-height: 1.5;
@@ -37,6 +36,11 @@
   width: 13%;
   height: auto;
   transform: rotate(-45deg);
+}
+.pictures >img{
+  height: auto;
+  max-width: 115%;
+  width: 115%;
 }
 
 .theme {
@@ -296,11 +300,13 @@
 }
 
 @media screen and (max-width:450px) {
-  .middle{
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  .theme{
+    width: fit-content;
   }
+  .pictures {
+    width: auto;
+    height: auto;
+    transform: rotate(-45deg);
+  }
+  
 }
