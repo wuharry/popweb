@@ -1,17 +1,17 @@
-import "./style.css";
+import styles from "./style.module.scss";
 import NavigationBar from "./component/NavigationBar";
 import Buttons from "../../components/Button";
 import LittlePage from "./component/littlepage";
 import LittlePage2 from "./component/littlepage2";
+import React from "react";
 const Home = () => {
   return (
     <>
-      <div className="body">
+      <div className={styles.body}>
         <NavigationBar />
-
-        <div className="context">
+        <div className={styles.context}>
           {/* 內文區 */}
-          <div className="maincontent">
+          <div className={styles.maincontent}>
             <h1>a new way to experience online invitations</h1>
             <p>
               Plan in-person or <a href="/virtual">virtual events</a> for your
@@ -20,12 +20,12 @@ const Home = () => {
             <Buttons data={"CREATE AN INVATION"} color={"white"} />
           </div>
           {/* 放置圖片的地區 */}
-          <div className="imges">
-            <div className="imgescontain">
-              <div className="Noteframe">
-                <div className="Note"></div>
+          <div className={styles.imges}>
+            <div className={styles.imgescontain}>
+              <div className={styles.Noteframe}>
+                <div className={styles.Note}></div>
                 <picture
-                  className="Nopadcontain"
+                  className={styles.Nopadcontain}
                   srcset="./images/hero_desktop_image@0.75x.avif'"
                   media="(min-width: 800px)"
                 >
@@ -33,16 +33,16 @@ const Home = () => {
                 </picture>
               </div>
 
-              <div className="mobileframe">
-                <div className="mobile"></div>
-                <div className="mobilecontain">
+              <div className={styles.mobileframe}>
+                <div className={styles.mobile}></div>
+                <div className={styles.mobilecontain}>
                   <picture
                     srcset="./images/hero_mobile_image@0.75x.avif'"
                     media="(min-width: 800px)"
                   >
                     <img
                       src="./images/hero_mobile_image@1x.avif"
-                      className="mobilepicture"
+                      className={styles.mobilepicture}
                     />
                   </picture>
                 </div>
@@ -52,7 +52,7 @@ const Home = () => {
           {/* footer */}
         </div>
         {/* 放置小分業 */}
-        <div className="middle">
+        <div className={styles.middle}>
           <LittlePage />
           <LittlePage2 />
         </div>
