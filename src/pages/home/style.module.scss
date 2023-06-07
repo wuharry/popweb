@@ -58,7 +58,6 @@
   flex: 10 1;
 }
 .imgescontain {
-  margin-bottom: 10%;
   position: relative;
   width: 100%;
   height: auto;
@@ -66,21 +65,30 @@
 .Noteframe {
   width: 100%;
   height: auto;
+  display: flex;
+  justify-content: center;
 }
 .Note {
   width: 80%;
   height: 101%;
   background: url("../../../public/images/hero_desktop_frame.svg") 0 0 no-repeat;
   background-size: contain;
+  display: flex;
+  justify-content: center;
   position: absolute;
-  left: 7.1em;
-  top: 0em;
   z-index: 2;
   overflow: hidden;
 }
+.Nopadcontain{
+  max-width: 100%;
+}
 .Nopadcontain > img {
-  width: 79.7%;
+  max-width: 110%;
   height: auto;
+  // max-height: 80em;
+  overflow: hidden;
+  position: relative;
+  right: 15%;
   border-radius: 10px;
 }
 
