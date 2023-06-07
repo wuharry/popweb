@@ -44,15 +44,16 @@
 
 .theme {
   width: 100%;
-  height: 30em;
+  max-height: 30em;
+  min-height: 10em;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items:end;
   position: relative;
-  top: 1%;
   margin-left: auto;
   margin-right: auto;
+  top: 10em;
 }
 
 .topsec {
@@ -301,11 +302,18 @@
 @media screen and (max-width:450px) {
   .theme{
     width: fit-content;
+    top: 0em;
+  }
+  .childTitle {
+    font-size: 1em;
   }
   .pictures {
     width: auto;
     height: auto;
     transform: rotate(-45deg);
   }
-  
+  .Title > h2 {
+    font-size: 1.8em;
+
+  }
 }

@@ -77,7 +77,7 @@ const LittlePage = ({ context, buttonON }) => {
         </div>
 
         {/* 泡泡icon區 */}
-        {/* <div className={styles.topsec}>
+         <div className={styles.topsec}>
           <div className={styles.buboicon1}>
             <span className={styles.bubo1_left}></span>
             <span className={styles.bubo1_right}></span>
@@ -102,7 +102,7 @@ const LittlePage = ({ context, buttonON }) => {
             <span className={styles.bubo6_left}></span>
             <span className={styles.bubo6_right}></span>
           </div>
-        </div> */}
+        </div> 
       </div>
     </>
   );
