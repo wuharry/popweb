@@ -58,11 +58,11 @@
   flex: 10 1;
 }
 .imgescontain {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 .Noteframe {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   position: relative;
 }
@@ -136,7 +136,6 @@
     flex-direction: column-reverse;
     margin-top: 0;
     justify-content: flex-start;
-    height: 45em;
   }
 
   .maincontent {
@@ -158,31 +157,18 @@
   .middle {
     margin-top: 0;
   }
-  .imges {
-    flex: 0 1;
-    padding-top: 15px;
-  }
 
-  .Note {
-    left: 2.2em;
-  }
 
   .mobileframe {
     width: 100%;
     height: auto;
-    top: 3em;
-    left: 17em;
   }
   .mobile {
     width: 22%;
-    height: 9em;
-    left: 0.2em;
-
   }
   .mobilepicture{
     width: 17.5%;
     height: auto;
     border-radius: 5px;
-    top: 0.3em;
   }
 }
