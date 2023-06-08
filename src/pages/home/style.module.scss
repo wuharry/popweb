@@ -74,8 +74,8 @@
   background: url("../../../public/images/hero_desktop_frame.svg") 0 0 no-repeat;
   background-size: contain;
   display: flex;
-  justify-content: center;
-  position: absolute;
+  // justify-content: center;
+  position: relative;
   z-index: 2;
   overflow: hidden;
 }
@@ -83,12 +83,13 @@
   max-width: 100%;
 }
 .Nopadcontain > img {
-  max-width: 110%;
+  max-width: 100%;
   height: auto;
-  // max-height: 80em;
   overflow: hidden;
-  position: relative;
-  right: 15%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
 }
 
