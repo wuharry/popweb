@@ -23,7 +23,9 @@ const Home = () => {
           <div className={styles.imges}>
             <div className={styles.imgescontain}>
               <div className={styles.Noteframe}>
+                {/* 邊框 */}
                 <div className={styles.Note}></div>
+                {/* 內容 */}
                 <picture
                   className={styles.Nopadcontain}
                   srcset="./images/hero_desktop_image@0.75x.avif'"
