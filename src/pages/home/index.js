@@ -21,33 +21,31 @@ const Home = () => {
           </div>
           {/* 放置圖片的地區 */}
           <div className={styles.imges}>
-            <div className={styles.imgescontain}>
-              <div className={styles.Noteframe}>
-                {/* 邊框 */}
-                <div className={styles.Note}></div>
-                {/* 內容 */}
+            <div className={styles.Noteframe}>
+              {/* 內容 */}
+              <div className={styles.Note}>
                 <picture
-                  className={styles.Nopadcontain}
                   srcset="./images/hero_desktop_image@0.75x.avif'"
                   media="(min-width: 800px)"
                 >
                   <img src="./images/hero_desktop_image@1x.avif" />
                 </picture>
               </div>
-
-              <div className={styles.mobileframe}>
-                <div className={styles.mobile}></div>
-                <div className={styles.mobilecontain}>
-                  <picture
-                    srcset="./images/hero_mobile_image@0.75x.avif'"
-                    media="(min-width: 800px)"
-                  >
-                    <img
-                      src="./images/hero_mobile_image@1x.avif"
-                      className={styles.mobilepicture}
-                    />
-                  </picture>
-                </div>
+              {/* 邊框 */}
+              
+            </div>
+            <div className={styles.mobileframe}>
+              <div className={styles.mobile}></div>
+              <div className={styles.mobilecontain}>
+                <picture
+                  srcset="./images/hero_mobile_image@0.75x.avif'"
+                  media="(min-width: 800px)"
+                >
+                  <img
+                    src="./images/hero_mobile_image@1x.avif"
+                    className={styles.mobilepicture}
+                  />
+                </picture>
               </div>
             </div>
           </div>
