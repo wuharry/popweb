@@ -26,7 +26,7 @@
   max-width: 700px;
 }
 
-.maincontent>h1 {
+.maincontent > h1 {
   // 標題文字調整
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-overflow: ellipsis;
@@ -38,7 +38,7 @@
   color: white;
 }
 
-.maincontent>p {
+.maincontent > p {
   // 內文文字調整
   font-size: 1.2142857143rem;
   text-overflow: ellipsis;
@@ -49,7 +49,7 @@
   color: white;
 }
 
-.maincontent>p>a {
+.maincontent > p > a {
   color: darkkhaki;
   text-decoration: underline;
 }
@@ -90,7 +90,6 @@
   border-radius: 10px;
 }
 
-
 .mobileframe {
   // 手機圖板調整
   position: absolute;
@@ -127,9 +126,7 @@
   margin-top: 15rem;
 }
 
-
 @media (max-width: 768px) {
-
   /* 平板尺寸以下 */
   .context {
     // 調整主頁面內容
@@ -152,12 +149,9 @@
   .Nopadcontain {
     height: fit-content;
   }
-
-  .mobile {}
 }
 
 @media (max-width: 576px) {
-
   /* 手機尺寸以下 */
   .imges {
     // 設定容器寬度=>讓手機跟平板之間更好排版
@@ -173,14 +167,14 @@
     padding-bottom: 4em;
   }
 
-  .maincontent>h1 {
+  .maincontent > h1 {
     font-size: 2.1428571429em;
     text-align: center;
     line-height: 1.2;
     letter-spacing: 0.05em;
   }
 
-  .maincontent>p {
+  .maincontent > p {
     // 文字大小
     margin-bottom: 2.5em;
     margin-top: 2em;

@@ -1,43 +1,41 @@
 .layout {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .Nav_Title {
-    font-size: 35px;
-    margin-left: 5vh;
-    margin-top: 2vh;
-    color: white;
-    font-weight: 1500;
-    font-family: monospace;
+  font-size: 35px;
+  margin-left: 5vh;
+  margin-top: 2vh;
+  color: white;
+  font-weight: 1500;
+  font-family: monospace;
 }
 
 .Navright {
-    width: 17em;
-    display: flex;
-    justify-content: space-around;
+  width: 17em;
+  display: flex;
+  justify-content: space-around;
 }
 
 .Nav_font {
-    font: .875em;
-    color: white;
-
+  font: 0.875em;
+  color: white;
 }
 
 .hanbuger {
-    background-color: #464c60;
-    border: 0;
-    padding: 0;
-    height: 24px;
+  background-color: #464c60;
+  border: 0;
+  padding: 0;
+  height: 24px;
 }
 
-@media screen and (max-width:600px) {
-    .Navright {
-        width: 5em;
-    }
-    .Nav_font{
-        display: none;
-    }
-    
+@media screen and (max-width: 600px) {
+  .Navright {
+    width: 5em;
+  }
+  .Nav_font {
+    display: none;
+  }
 }

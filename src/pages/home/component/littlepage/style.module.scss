@@ -1,12 +1,21 @@
-// .body{
-//   margin: 0;
-//   padding: 0;
-//   width: 100%;
-//   height: 100%;
-//   display: flex !important;
-//   flex-direction: column !important;
-//   min-height: 100vh !important;
-// }
+@mixin buboicon-common-styles {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-box-pack: center;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
 
 .contain {
   margin: 0;
@@ -30,7 +39,7 @@
   text-transform: uppercase;
 }
 
-.Title>h2 {
+.Title > h2 {
   text-transform: lowercase;
   color: #1f222c;
   margin-bottom: 1em;
@@ -76,22 +85,7 @@
 }
 
 .buboicon1 {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-box-pack: center;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  justify-content: center;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
+  @include buboicon-common-styles;
   left: 90em;
   top: -12%;
   width: 4%;
@@ -117,22 +111,7 @@
 }
 
 .buboicon2 {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-box-pack: center;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  justify-content: center;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
+  @include buboicon-common-styles;
   left: 26em;
   top: 50%;
   width: 2%;
@@ -159,22 +138,7 @@
 }
 
 .buboicon3 {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-box-pack: center;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  justify-content: center;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
+  @include buboicon-common-styles;
   left: 70em;
   top: 71%;
   width: 2%;
@@ -201,22 +165,7 @@
 }
 
 .buboicon4 {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-box-pack: center;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  justify-content: center;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
+  @include buboicon-common-styles;
   left: 5em;
   top: 13%;
   width: 3.7%;
@@ -243,22 +192,7 @@
 }
 
 .buboicon5 {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-box-pack: center;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  justify-content: center;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
+  @include buboicon-common-styles;
   left: 0em;
   top: 95%;
   width: 3.7%;
@@ -285,22 +219,7 @@
 }
 
 .buboicon6 {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-box-pack: center;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  justify-content: center;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
+  @include buboicon-common-styles;
   left: 100em;
   top: 97%;
   width: 3.7%;
@@ -326,7 +245,7 @@
   background: #207465;
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width: 450px) {
   .theme {
     width: fit-content;
   }
@@ -337,12 +256,11 @@
     transform: rotate(-45deg);
   }
 
-  .Title>h2 {
+  .Title > h2 {
     font-size: 1.8em;
   }
 
   .childTitle {
     font-size: 1em;
   }
-
 }

@@ -1,4 +1,3 @@
-
 import styles from "./style.module.scss";
 import Buttons from "../../../../components/Button";
 import React from "react";
@@ -20,7 +19,10 @@ const LittlePage = ({ context, buttonON }) => {
               srcset="./images/theme_1_thumbnail@1x.avif"
               media="(min-width: 800px)"
             >
-              <img className={styles.imges} src="./images/theme_1_thumbnail@1x.avif" />
+              <img
+                className={styles.imges}
+                src="./images/theme_1_thumbnail@1x.avif"
+              />
             </picture>
           </div>
 
@@ -29,7 +31,10 @@ const LittlePage = ({ context, buttonON }) => {
               srcset="./images/theme_5_thumbnail@1x.avif"
               media="(min-width: 800px)"
             >
-              <img className={styles.imges} src="./images/theme_5_thumbnail@1x.avif" />
+              <img
+                className={styles.imges}
+                src="./images/theme_5_thumbnail@1x.avif"
+              />
             </picture>
           </div>
 
@@ -50,7 +55,10 @@ const LittlePage = ({ context, buttonON }) => {
               srcset="./images/theme_7_thumbnail@1x.avif"
               media="(min-width: 800px)"
             >
-              <img className={styles.imges} src="./images/theme_7_thumbnail@1x.avif" />
+              <img
+                className={styles.imges}
+                src="./images/theme_7_thumbnail@1x.avif"
+              />
             </picture>
           </div>
 
@@ -71,13 +79,16 @@ const LittlePage = ({ context, buttonON }) => {
               srcset="./images/theme_6_thumbnail@1x.avif"
               media="(min-width: 800px)"
             >
-              <img className={styles.imges} src="./images/theme_6_thumbnail@1x.avif" />
+              <img
+                className={styles.imges}
+                src="./images/theme_6_thumbnail@1x.avif"
+              />
             </picture>
           </div>
         </div>
 
         {/* 泡泡icon區 */}
-         <div className={styles.topsec}>
+        <div className={styles.topsec}>
           <div className={styles.buboicon1}>
             <span className={styles.bubo1_left}></span>
             <span className={styles.bubo1_right}></span>
@@ -102,7 +113,7 @@ const LittlePage = ({ context, buttonON }) => {
             <span className={styles.bubo6_left}></span>
             <span className={styles.bubo6_right}></span>
           </div>
-        </div> 
+        </div>
       </div>
     </>
   );

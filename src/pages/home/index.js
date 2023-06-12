@@ -22,18 +22,17 @@ const Home = () => {
           {/* 放置圖片的地區 */}
           <div className={styles.imges}>
             <div className={styles.Noteframe}>
-              <div className={styles.Note}>
-              </div>
+              <div className={styles.Note}></div>
               {/* 內容 */}
               <picture
-                  srcset="./images/hero_desktop_image@0.75x.avif'"
-                  media="(min-width: 800px)"
-                >
-                  <img
-                    className={styles.Nopadcontain}
-                    src="./images/hero_desktop_image@1x.avif"
-                  />
-                </picture>
+                srcset="./images/hero_desktop_image@0.75x.avif'"
+                media="(min-width: 800px)"
+              >
+                <img
+                  className={styles.Nopadcontain}
+                  src="./images/hero_desktop_image@1x.avif"
+                />
+              </picture>
             </div>
             <div className={styles.mobileframe}>
               <div className={styles.mobile}></div>
