@@ -17,10 +17,25 @@
   position: absolute;
 }
 
+@mixin buboleft-common-styles {
+  -webkit-box-flex: 0; //共通
+  border-right: 1px solid #fff;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  height: 100%;
+}
+@mixin buboright-common-styles {
+  -webkit-box-flex: 0;
+  border-left: 1px solid #fff;
+  border-right: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  height: 100%;
+}
 .contain {
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color:#f5f5f5;
   overflow: hidden;
   width: 100%;
   padding-right: 15px;
@@ -52,7 +67,7 @@
 .pictures {
   width: 13%;
   height: auto;
-  transform: rotate(-45deg);
+  transform: rotate(-30deg);
 }
 
 .imges {
@@ -86,181 +101,129 @@
 
 .buboicon1 {
   @include buboicon-common-styles;
-  left: 90em;
-  top: -12%;
-  width: 4%;
-  height: 24%;
+  left: 70em;
+  bottom: 29.5em;
+  width: 3em;
+  height: 3em;
 }
 
 .bubo1_left {
-  -webkit-box-flex: 0;
-  border-right: 1px solid #fff;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  height: 100%;
+  @include buboleft-common-styles;
   background: #1f222c;
 }
 
 .bubo1_right {
-  -webkit-box-flex: 0;
-  border-right: 1px solid #fff;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  height: 100%;
+  @include buboright-common-styles;
+  // border-right: 1px solid #fff;
   background: #cf514f;
 }
 
 .buboicon2 {
   @include buboicon-common-styles;
-  left: 26em;
-  top: 50%;
-  width: 2%;
-  height: 12%;
+  left: 19em;
+  bottom: 20em;
+  width: 1.6em;
+  height: 1.6em;
 }
 
 .bubo2_left {
-  -webkit-box-flex: 0;
-  border-right: 1px solid #fff;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  height: 100%;
+  @include buboleft-common-styles;
   background: #bce3e9;
 }
 
 .bubo2_right {
-  -webkit-box-flex: 0;
-  border-left: 1px solid #fff;
-  border-right: 0;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  height: 100%;
+  @include buboright-common-styles;
   background: #e9725a;
 }
 
 .buboicon3 {
   @include buboicon-common-styles;
-  left: 70em;
-  top: 71%;
-  width: 2%;
-  height: 12%;
+  left: 60em;
+  bottom: 15em;
+  width: 2em;
+  height: 2em;
 }
 
 .bubo3_left {
+  @include buboleft-common-styles;
   background: #6467aa;
-  -webkit-box-flex: 0;
-  border-right: 1px solid #fff;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  height: 100%;
 }
 
 .bubo3_right {
-  -webkit-box-flex: 0;
-  border-left: 1px solid #fff;
-  border-right: 0;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  height: 100%;
+  @include buboright-common-styles;
   background: #76c1b2;
 }
 
 .buboicon4 {
   @include buboicon-common-styles;
   left: 5em;
-  top: 13%;
-  width: 3.7%;
-  height: 20%;
+  bottom: 27em;
+  width: 2.5em;
+  height: 2.5em;
 }
 
 .bubo4_left {
-  -webkit-box-flex: 0;
-  border-right: 1px solid #fff;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  height: 100%;
+  @include buboleft-common-styles;
   background: #ff9d22;
 }
 
 .bubo4_right {
-  -webkit-box-flex: 0;
-  border-left: 1px solid #fff;
-  border-right: 0;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  height: 100%;
+  @include buboright-common-styles;
   background: #ff611a;
 }
 
 .buboicon5 {
   @include buboicon-common-styles;
-  left: 0em;
-  top: 95%;
-  width: 3.7%;
-  height: 20%;
+  left: -1.4em;
+  bottom: 7em;
+  width: 3.1em;
+  height: 3.1em;
 }
 
 .bubo5_left {
-  -webkit-box-flex: 0;
-  border-right: 1px solid #fff;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  height: 100%;
+  @include buboleft-common-styles;
   background: #ff0080;
 }
 
 .bubo5_right {
-  -webkit-box-flex: 0;
-  border-left: 1px solid #fff;
-  border-right: 0;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  height: 100%;
+  @include buboright-common-styles;
   background: #432f70;
 }
 
 .buboicon6 {
   @include buboicon-common-styles;
-  left: 100em;
-  top: 97%;
-  width: 3.7%;
-  height: 20%;
+  left: 74em;
+  bottom: 4em;
+  width: 3em;
+  height: 3em;
 }
 
 .bubo6_left {
-  -webkit-box-flex: 0;
-  border-right: 1px solid #fff;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  height: 100%;
+  @include buboleft-common-styles;
   background: #fff2e7;
 }
 
 .bubo6_right {
-  -webkit-box-flex: 0;
-  border-left: 1px solid #fff;
-  border-right: 0;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  height: 100%;
+  @include buboright-common-styles;
   background: #207465;
 }
 
-@media screen and (max-width: 450px) {
+@media (max-width: 576px) {
+  /* 在螢幕寬度小於 576px 時的寬度 */
   .theme {
-    width: fit-content;
+    top: 2em;
+    right: 6em;
+    width: 40em;
   }
-
-  .pictures {
-    width: auto;
-    height: auto;
-    transform: rotate(-45deg);
-  }
-
   .Title > h2 {
     font-size: 1.8em;
   }
-
-  .childTitle {
-    font-size: 1em;
+  .childTitle > h3 {
+    font-size: .9em;
+    letter-spacing: .2em;
+    line-height: 1.5;
   }
+}
+@media (min-width: 577px) and (max-width: 992px) {
+  /* 在螢幕寬度介於 577px 到 992px 之間時的寬度 */
 }
