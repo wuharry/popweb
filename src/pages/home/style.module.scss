@@ -26,7 +26,8 @@
   max-width: 700px;
 }
 
-.maincontent > h1 {
+.maincontent>h1 {
+  // 標題文字調整
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-overflow: ellipsis;
   font-size: 3.2142857143rem;
@@ -37,7 +38,8 @@
   color: white;
 }
 
-.maincontent > p {
+.maincontent>p {
+  // 內文文字調整
   font-size: 1.2142857143rem;
   text-overflow: ellipsis;
   line-height: 1.5;
@@ -47,27 +49,32 @@
   color: white;
 }
 
-.maincontent > p > a {
+.maincontent>p>a {
   color: darkkhaki;
   text-decoration: underline;
 }
 
 .imges {
+  // 包含平板圖片跟手機圖片
   position: relative;
   display: flex;
-  flex: 10 1;
+  flex: 6.5 1;
 }
+
 .Noteframe {
+  // 平板圖片最外層
   width: 100%;
   height: auto;
   position: relative;
 }
 
 .Note {
-  width: 100%;
+  // 平板邊框
+  width: 85%;
   max-width: 100%;
-  height: 28em;
+  height: 27em;
   background: url("../../../public/images/hero_desktop_frame.svg") 0 0 no-repeat;
+  background-size: contain;
   position: absolute;
   top: 0;
   left: 0;
@@ -78,37 +85,42 @@
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 100%;
-  object-fit: cover;
+  width: 85%;
+  object-fit: contain;
   border-radius: 10px;
 }
 
 
 .mobileframe {
+  // 手機圖板調整
   position: absolute;
-  top: 7em;
-  left: 55em;
+  top: 20%;
+  left: 75%;
+  height: 15em;
+  width: 20em;
 }
+
 .mobile {
+  // 手機邊框
   background: url("../../../public/images/hero_mobile_frame.svg") 0 0 no-repeat;
   background-size: contain;
   overflow: hidden;
   position: absolute;
-  width: 14.3em;
-  height: 30em;
+  width: 10em;
+  height: 20em;
   z-index: 4;
 }
 
 .mobilepicture {
-  display: block;
   position: absolute;
   z-index: 3;
-  width: 13.6em;
-  top: 0.4em;
-  left: 0.42em;
-  height: 29.3em;
+  top: 0;
+  left: 0;
+  width: 45.5%;
+  object-fit: contain;
   border-radius: 12px;
 }
+
 .middle {
   margin-right: auto;
   margin-left: auto;
@@ -117,6 +129,7 @@
 
 
 @media (max-width: 768px) {
+
   /* 平板尺寸以下 */
   .context {
     // 調整主頁面內容
@@ -125,61 +138,79 @@
     align-items: center;
     margin-top: 2em;
   }
+
   .Note {
-    background-size: contain;
     height: 20em;
     width: 20em;
   }
-  .Noteframe{
+
+  .Noteframe {
     height: 15em;
     width: 20em;
   }
-  .Nopadcontain{
+
+  .Nopadcontain {
     height: fit-content;
   }
+
+  .mobile {}
 }
 
 @media (max-width: 576px) {
+
   /* 手機尺寸以下 */
+  .imges {
+    // 設定容器寬度=>讓手機跟平板之間更好排版
+    width: 90%;
+  }
+
   .maincontent {
-    // 調整文字&&按鈕位置(這邊日後可能會需要再調整)
-    // margin-top: 14em;
+    // 調整文字&&按鈕位置
     margin-top: 0em;
     margin-left: 0;
     justify-content: flex-start;
     align-items: center;
     padding-bottom: 4em;
   }
-  .maincontent > h1 {
+
+  .maincontent>h1 {
     font-size: 2.1428571429em;
     text-align: center;
     line-height: 1.2;
     letter-spacing: 0.05em;
   }
-  .maincontent > p {
+
+  .maincontent>p {
     // 文字大小
     margin-bottom: 2.5em;
     margin-top: 2em;
+    text-align: center;
   }
+
   .Note {
     height: 19em;
   }
-  .Nopadcontain{
+
+  .Nopadcontain {
+    width: 99%;
     height: 13em;
   }
+
   .middle {
     margin-top: 0;
   }
+
   .mobileframe {
-    width: 100%;
-    height: auto;
+    left: 75%;
+    top: 25%;
   }
+
   .mobile {
-    width: 22%;
+    width: 100%;
+    height: 10em;
   }
-  .mobilepicture{
-    width: 17.5%;
-    height: auto;
-    border-radius: 5px;
+
+  .mobilepicture {
+    width: 4.6em;
   }
 }
