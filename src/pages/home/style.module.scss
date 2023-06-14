@@ -63,7 +63,7 @@
 
 .Noteframe {
   // 平板圖片最外層
-  width: 100%;
+  width:90%;
   height: auto;
   position: relative;
 }
@@ -72,7 +72,7 @@
   // 平板邊框
   width: 85%;
   max-width: 100%;
-  height: 27em;
+  height: 100vh;//螢幕變大時高度跟寬度不會跑版
   background: url("../../../public/images/hero_desktop_frame.svg") 0 0 no-repeat;
   background-size: contain;
   position: absolute;
