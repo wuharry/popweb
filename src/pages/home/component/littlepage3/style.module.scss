@@ -1,0 +1,72 @@
+.context {
+  // LittlePage3 的長度為
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  --grid-spacing: 2em;
+  align-items: center;
+  background: #1f222c;
+  display: grid;
+  grid-row: 5;
+  grid-template-columns: minmax(6.68%, 1fr) minmax(auto, 57.1428571429em) 27.8571428571em minmax(
+      6.68%,
+      1fr
+    );
+  grid-template-rows: 46.7857142857em;
+  justify-items: center;
+  overflow: hidden;
+}
+.image_context {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  grid-column: 1/3;
+  grid-row: 1;
+  justify-content: space-between;
+  justify-self: end;
+  max-width: 71.4285714286em;
+  min-width: 63.5714285714em em;
+  position: relative;
+  right: 10em;
+  top: -10%;
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+  width: 100%;
+}
+.imge_section1{
+
+}
+.imge_section2{
+
+}
+.imge_section3{
+    
+}
+.text_context {
+  grid-column: 3;
+  grid-row: 1;
+  text-align: center;
+}
+
+.text_context > h2 {
+    color: #fff;
+    margin-bottom: 0.5em;
+    font-size: 2.5714285714em;
+    letter-spacing: .05em;
+    line-height: 1.2;
+    // margin: 0 0 0.4em;
+    text-transform: lowercase;
+}
+.text_context > p {
+    color: #fff;
+    font-size: 1.2142857143em;
+    letter-spacing: .05em;
+    line-height: 1.5;
+    margin: 3em 0;
+}

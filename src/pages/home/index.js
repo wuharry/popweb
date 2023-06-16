@@ -3,6 +3,7 @@ import NavigationBar from "./component/NavigationBar";
 import Buttons from "../../components/Button";
 import LittlePage from "./component/littlepage";
 import LittlePage2 from "./component/littlepage2";
+import LittlePage3 from "./component/littlepage3";
 import React from "react";
 const Home = () => {
   return (
@@ -55,6 +56,7 @@ const Home = () => {
         <div className={styles.middle}>
           <LittlePage />
           <LittlePage2 />
+          <LittlePage3/>
         </div>
       </div>
     </>
