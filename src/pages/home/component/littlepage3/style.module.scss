@@ -1,5 +1,5 @@
 .context {
-  // LittlePage3 的長度為
+  // LittlePage3 
   -webkit-box-align: center;
   -ms-flex-align: center;
   --grid-spacing: 2em;
@@ -7,10 +7,7 @@
   background: #1f222c;
   display: grid;
   grid-row: 5;
-  grid-template-columns: minmax(6.68%, 1fr) minmax(auto, 57.1428571429em) 27.8571428571em minmax(
-      6.68%,
-      1fr
-    );
+  grid-template-columns: minmax(6.68%,1fr) minmax(auto,57.1428571429em) 27.8571428571em minmax(6.68%,1fr);
   grid-template-rows: 46.7857142857em;
   justify-items: center;
   overflow: hidden;
@@ -30,8 +27,8 @@
   grid-row: 1;
   justify-content: space-between;
   justify-self: end;
-  max-width: 71.4285714286em;
-  min-width: 63.5714285714em em;
+  max-width: 32em;
+  // min-width: 63.5714285714em;
   position: relative;
   right: 10em;
   top: -10%;
@@ -39,14 +36,33 @@
   transform: rotate(20deg);
   width: 100%;
 }
-.imge_section1{
-
+.imge_section1 {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-flex: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 0 0 1fr;
+  flex: 0 0 1fr;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: center;
+  padding-left: var(--grid-spacing);
+  pointer-events: none;
 }
-.imge_section2{
-
+.image_template_wapper1 {
+  outline: none;
 }
-.imge_section3{
-    
+.imge_section2 {
+}
+.imge_section3 {
+}
+.imge_section4 {
 }
 .text_context {
   grid-column: 3;
@@ -55,18 +71,18 @@
 }
 
 .text_context > h2 {
-    color: #fff;
-    margin-bottom: 0.5em;
-    font-size: 2.5714285714em;
-    letter-spacing: .05em;
-    line-height: 1.2;
-    // margin: 0 0 0.4em;
-    text-transform: lowercase;
+  color: #fff;
+  margin-bottom: 0.5em;
+  font-size: 2.5714285714em;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  // margin: 0 0 0.4em;
+  text-transform: lowercase;
 }
 .text_context > p {
-    color: #fff;
-    font-size: 1.2142857143em;
-    letter-spacing: .05em;
-    line-height: 1.5;
-    margin: 3em 0;
+  color: #fff;
+  font-size: 1.2142857143em;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  margin: 3em 0;
 }

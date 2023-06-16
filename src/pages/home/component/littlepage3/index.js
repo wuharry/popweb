@@ -5,18 +5,30 @@ const LittlePage3 = () => {
   return (
     <>
       <div className={styles.context}>
-        {/* 左側放置圖片 */}
         <div className={styles.image_context}>
-          <picture class="template_image_wrapper">
-            {/* 三層協圖 */}
           <div className={styles.imge_section1}>
-            <img className="" src="./images/thumbnail_small.avif" />
-            <img className="" src="./images/thumbnail_small 2.avif"/>
-            <img className="" src="./images/thumbnail_small 3.avif"/>
+            <img
+              className={styles.image_template_wapper1}
+              src="./images/thumbnail_small.avif"
+            />
+            <img
+              className={styles.image_template_wapper1}
+              src="./images/thumbnail_small 2.avif"
+            />
+            <img
+              className={styles.image_template_wapper1}
+              src="./images/thumbnail_small 3.avif"
+            />
           </div>
-          <div className={styles.imge_section2}></div>
-          <div className={styles.imge_section3}></div>
-          </picture>
+          <div className={styles.imge_section2}>
+
+          </div>
+          <div className={styles.imge_section3}>
+
+          </div>
+          <div className={styles.imge_section4}>
+            
+            </div>
         </div>
         {/* 右側放置文字 */}
         <div className={styles.text_context}>
