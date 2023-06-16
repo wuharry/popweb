@@ -1,8 +1,29 @@
+
+@mixin imge_section-common-styles
+{
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-flex: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 0 0 1fr;
+  flex: 0 0 1fr;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: center;
+  padding-left: var(--grid-spacing);
+  pointer-events: none;
+}
 .context {
   // LittlePage3 
   -webkit-box-align: center;
   -ms-flex-align: center;
-  --grid-spacing: 2em;
+  --grid-spacing: .5em;
   align-items: center;
   background: #1f222c;
   display: grid;
@@ -27,7 +48,7 @@
   grid-row: 1;
   justify-content: space-between;
   justify-self: end;
-  max-width: 32em;
+  max-width: 48em;
   // min-width: 63.5714285714em;
   position: relative;
   right: 10em;
@@ -37,39 +58,40 @@
   width: 100%;
 }
 .imge_section1 {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-box-flex: 0;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex: 0 0 1fr;
-  flex: 0 0 1fr;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  height: auto;
-  justify-content: center;
-  padding-left: var(--grid-spacing);
-  pointer-events: none;
+  @include imge_section-common-styles;
 }
 .image_template_wapper1 {
   outline: none;
 }
 .imge_section2 {
+  -ms-flex-item-align: stretch;
+  -webkit-box-flex: 0;
+  align-self: stretch;
+  background: -webkit-gradient(linear,left top,left bottom,from(#1f222c),color-stop(28%,#343948),color-stop(50%,#43495c),color-stop(72%,#343948),to(#1f222c));
+  background: linear-gradient(180deg,#1f222c 0,#343948 28%,#43495c 50%,#343948 72%,#1f222c);
+  -webkit-box-shadow: 0.5714285714em 0.5714285714em 1.7857142857em rgba(0,0,0,.5);
+  box-shadow: 0.5714285714em 0.5714285714em 1.7857142857em rgba(0,0,0,.5);
+  -ms-flex: 0 0 22%;
+  flex: 0 0 22%;
+  margin-left: var(--grid-spacing);
+  margin-top: 16em;
+  padding-right: var(--grid-spacing);
 }
 .imge_section3 {
+  @include imge_section-common-styles;
 }
 .imge_section4 {
+  @include imge_section-common-styles;
+}
+.images{
+  width: fit-content;
+  object-fit: contain;
 }
 .text_context {
   grid-column: 3;
   grid-row: 1;
   text-align: center;
 }
-
 .text_context > h2 {
   color: #fff;
   margin-bottom: 0.5em;
