@@ -60,9 +60,7 @@
 .imge_section1 {
   @include imge_section-common-styles;
 }
-.image_template_wapper1 {
-  outline: none;
-}
+
 .imge_section2 {
   -ms-flex-item-align: stretch;
   -webkit-box-flex: 0;
@@ -84,9 +82,16 @@
   @include imge_section-common-styles;
 }
 .images{
-  width: fit-content;
-  object-fit: contain;
+  outline: none;
+  -webkit-box-flex: 0;
+  -webkit-box-shadow: 0.5714285714em 0.5714285714em 1.7857142857em rgba(0,0,0,.5);
+  box-shadow: 0.5714285714em 0.5714285714em 1.7857142857em rgba(0,0,0,.5);
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  height: auto;
+  max-width: 13em;
 }
+
 .text_context {
   grid-column: 3;
   grid-row: 1;

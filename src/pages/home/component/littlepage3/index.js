@@ -1,6 +1,7 @@
 import styles from "./style.module.scss";
 import Buttons from "../../../../components/Button";
 import React from "react";
+// import React, { useEffect, useRef, useState } from 'react';
 const LittlePage3 = () => {
   return (
     <>
@@ -8,15 +9,15 @@ const LittlePage3 = () => {
         <div className={styles.image_context}>
           <div className={styles.imge_section1}>
             <img
-              className={styles.image_template_wapper1}
+              className={styles.images}
               src="./images/thumbnail_small.avif"
             />
             <img
-              className={styles.image_template_wapper1}
+              className={styles.images}
               src="./images/thumbnail_small 2.avif"
             />
             <img
-              className={styles.image_template_wapper1}
+              className={styles.images}
               src="./images/thumbnail_small 3.avif"
             />
           </div>
@@ -30,35 +31,35 @@ const LittlePage3 = () => {
           </div>
           <div className={styles.imge_section3}>
             <img
-            className={styles.imges}
+            className={styles.images}
              
               src="./images/thumbnail_medium.avif"
             />
             <img
-              className={styles.imges}
+              className={styles.images}
              
               src="./images/thumbnail_medium 2.avif"
             />
             <img
-              className={styles.imges}
+              className={styles.images}
              
               src="./images/thumbnail_medium3.avif"
             />
           </div>
-          {/* <div className={styles.imge_section4}>
+          <div className={styles.imge_section4}>
           <img
-              className={styles.image_template_wapper1}
+              className={styles.images}
               src="./images/thumbnail_medium4.avif"
             />
             <img
-              className={styles.image_template_wapper1}
+              className={styles.images}
               src="./images/thumbnail_medium5.avif"
             />
             <img
-              className={styles.image_template_wapper1}
+              className={styles.images}
               src="./images/thumbnail_medium6.avif"
             />
-          </div> */}
+          </div>
         </div>
         {/* 右側放置文字 */}
         <div className={styles.text_context}>
