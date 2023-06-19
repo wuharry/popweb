@@ -3,32 +3,33 @@ import Buttons from "../../../../components/Button";
 import React, { useEffect, useRef, useState } from "react"; //
 const LittlePage3 = () => {
   const [scrollY, setScrollY] = useState(0);
-  const containerStyle = {
+  const containerdown = {
     translate: "none",
     rotate: "none",
     scale: "none",
-    transform: `translate3d(0, ${scrollY}px, 0)`,
+    transform: `translate(0, ${-scrollY}%)`,
+  };
+  const containerup = {
+    translate: "none",
+    rotate: "none",
+    scale: "none",
+    transform: `translate(0, ${scrollY}%)`,
   };
   const slideInRef = useRef(null);
   const imgeup = useRef(null);
   const imgedown = useRef(null);
   useEffect(() => {
+    // setScrollY(0);
     const handleScroll = () => {
-      const windowTop = window.scrollY;
-      const windowBotton = window.scrollY + window.innerHeight;
-      setScrollY(window.scrollY / 7);
-      if (slideInRef.current.offsetTop < windowBotton) {
-        // 當瀏覽器視窗底部高於littlepage3=>class+動畫
-        console.log(`到點了`);
-      } else if (slideInRef.current.offsetTop > windowTop) {
-        // slideInRef.current.classList.contains //檢查是否包含額外的屬性
-        // console.log(slideInRef.current.offsetTop);
-        // console.log(windowTop);
-        // console.log(`移除動畫`);
-      }
+      // 開始時圖片有偏差,當瀏覽器視窗底部等於分頁3時偏差修正
+      const windowBotton = window.scrollY + window.innerHeight;//當瀏覽器視窗底部
+      console.log((window.scrollY / 10)-200);
+      setScrollY((window.scrollY / 10)-200);
     };
     window.addEventListener("scroll", handleScroll);
-  });
+  }, []);
+
+  useEffect(() => {});
   return (
     <>
       <div className={styles.context} ref={slideInRef}>
@@ -36,7 +37,7 @@ const LittlePage3 = () => {
           <div
             className={styles.imge_section1}
             ref={imgeup}
-            style={containerStyle}
+            style={containerup}
           >
             <img
               className={styles.images}
@@ -54,7 +55,7 @@ const LittlePage3 = () => {
           <div
             className={styles.imge_section2}
             ref={imgedown}
-            style={containerStyle}
+            style={containerdown}
           >
             <img
               className={styles.image_template_wapper1}
@@ -66,7 +67,7 @@ const LittlePage3 = () => {
           <div
             className={styles.imge_section3}
             ref={imgeup}
-            style={containerStyle}
+            style={containerup}
           >
             <img
               className={styles.images}
@@ -84,7 +85,7 @@ const LittlePage3 = () => {
           <div
             className={styles.imge_section4}
             ref={imgedown}
-            style={containerStyle}
+            style={containerdown}
           >
             <img
               className={styles.images}

@@ -18,6 +18,7 @@
   justify-content: center;
   padding-left: var(--grid-spacing);
   pointer-events: none;
+
 }
 .context {
   // LittlePage3 
@@ -59,6 +60,7 @@
 }
 .imge_section1 {
   @include imge_section-common-styles;
+  transform: translateY(0%) scale(0.95);
 }
 
 .imge_section2 {
@@ -74,6 +76,7 @@
   margin-left: var(--grid-spacing);
   margin-top: 16em;
   padding-right: var(--grid-spacing);
+
 }
 .imge_section3 {
   @include imge_section-common-styles;
