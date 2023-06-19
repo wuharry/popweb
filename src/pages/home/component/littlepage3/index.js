@@ -19,11 +19,9 @@ const LittlePage3 = () => {
   const imgeup = useRef(null);
   const imgedown = useRef(null);
   useEffect(() => {
-    // setScrollY(0);
     const handleScroll = () => {
       // 開始時圖片有偏差,當瀏覽器視窗底部等於分頁3時偏差修正
-      const windowBotton = window.scrollY + window.innerHeight;//當瀏覽器視窗底部
-      console.log((window.scrollY / 10)-200);
+      // const windowBotton = window.scrollY + window.innerHeight;//當瀏覽器視窗底部
       setScrollY((window.scrollY / 10)-200);
     };
     window.addEventListener("scroll", handleScroll);
