@@ -44,19 +44,49 @@
     width: 100%;
 }
 
-.screen{
-
+.pictures{
+    box-shadow: 0 0.1428571429em 0.2857142857em rgba(0,0,0,.5);
+    display: block;
+    height: auto;
+    max-width: 100%;
+    width: 100%;
 }
-
 .screen_starts{
-
+    position: absolute;
+    right: 37%;
+    top: 8%;
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+    width: 29.7857142857em;
+    z-index: 1;
 }
-.screen_bonfire{
 
+.screen_bonfire{
+    position: absolute;
+    right: 36%;
+    top: 47%;
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    width: 31.4285714286em;
+    z-index: 2;
 }
 .screen_invite{
-    
+    height: 100%;
+    right: 1px;
+    top: 0;
+    z-index: 3;
 }
 .screen_edit{
-
+    position: absolute;
+    right: 33%;
+    top: 22%;
+    width: 30.9285714286em;
+    z-index: 4;
+}
+.edit{
+    box-shadow: 0 0.1428571429em 0.2857142857em rgba(0,0,0,.5);
+    display: block;
+    height: auto;
+    max-width:30em;
+    width: 30em;
 }

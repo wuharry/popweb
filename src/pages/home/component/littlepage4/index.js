@@ -14,13 +14,20 @@ const Littlepage4 = () => {
         </p>
         <Buttons data={"CREATE AN INVATION"} color={"white"} />
       </div>
-      <div>
+      <div className={styles.image}>
         {/* 圖片區 */}
-        <div className={styles.screen_start}>
+        <div className={styles.screen_starts}>
+          <img src="./images/customize_gallery_stars@2x.avif" className={styles.pictures}/>
         </div>
-        <div className={styles.screen_bonfire}></div>
-        <div className={styles.screen_invite}></div>
-        <div className={styles.screen_edit}></div>
+        <div className={styles.screen_bonfire}>
+        <img src="./images/customize_gallery_bonfire@2x.avif" className={styles.pictures}/>
+        </div>
+        <div className={styles.screen_invite}>
+        <img src="./images/customize_invite@2x.avif" className={styles.pictures}/>
+        </div>
+        <div className={styles.screen_edit}>
+        <img src="./images/customize_edit_photo@2x.avif" className={styles.edit}/>
+        </div>
         </div>
     </div>
   );
