@@ -1,0 +1,62 @@
+.contain{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #343948;
+    display: grid;
+    grid-template-columns: minmax(6.68%,1fr) 27.8571428571em minmax(auto,57.1428571429em) minmax(6.68%,1fr);
+    grid-template-rows: 46.7857142857em;
+    justify-items: center;
+    overflow: hidden;
+}
+.context{
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    outline: none;
+}
+
+.context h2{
+    color: #fff;
+    margin-bottom: 0.5em;
+    font-size: 2.5714285714em;
+    letter-spacing: .05em;
+    line-height: 1.2;
+    margin: 0 0 0.4em;
+    text-transform: lowercase;
+}
+
+.context p{
+    color: #fff;
+    margin-top: 0;
+    font-size: 1.2142857143em;
+    letter-spacing: .05em;//字母間距
+    line-height: 1.5;//行高
+    margin: 3em 0;
+}
+.image{
+    align-self: stretch;
+    grid-column: 3/5;
+    grid-row: 1;
+    justify-self: end;
+    max-width: 71.4285714286em;
+    position: relative;
+    width: 100%;
+}
+
+.screen{
+
+}
+
+.screen_starts{
+
+}
+.screen_bonfire{
+
+}
+.screen_invite{
+    
+}
+.screen_edit{
+
+}

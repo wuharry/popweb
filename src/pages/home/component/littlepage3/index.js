@@ -1,6 +1,6 @@
 import styles from "./style.module.scss";
 import Buttons from "../../../../components/Button";
-import React, { useEffect, useRef, useState } from "react"; //
+import React, { useEffect, useRef, useState } from "react"; 
 const LittlePage3 = () => {
   const [scrollY, setScrollY] = useState(0);
   const containerdown = {
