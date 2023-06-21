@@ -21,8 +21,10 @@ const LittlePage3 = () => {
   useEffect(() => {
     const handleScroll = () => {
       // 開始時圖片有偏差,當瀏覽器視窗底部等於分頁3時偏差修正
-      // const windowBotton = window.scrollY + window.innerHeight;//當瀏覽器視窗底部
-      setScrollY((window.scrollY / 10)-200);
+      const windowBotton = window.scrollY + window.innerHeight;//當瀏覽器視窗底部
+      if (windowBotton<=window.innerWidth+slideInRef.current.offsetTop) {
+        setScrollY((window.scrollY / 10)-200);
+      }
     };
     window.addEventListener("scroll", handleScroll);
   }, []);
@@ -34,7 +36,7 @@ const LittlePage3 = () => {
         <div className={styles.image_context}>
           <div
             className={styles.imge_section1}
-            ref={imgeup}
+           
             style={containerup}
           >
             <img
@@ -52,7 +54,7 @@ const LittlePage3 = () => {
           </div>
           <div
             className={styles.imge_section2}
-            ref={imgedown}
+           
             style={containerdown}
           >
             <img
@@ -64,7 +66,7 @@ const LittlePage3 = () => {
           </div>
           <div
             className={styles.imge_section3}
-            ref={imgeup}
+           
             style={containerup}
           >
             <img
@@ -82,7 +84,7 @@ const LittlePage3 = () => {
           </div>
           <div
             className={styles.imge_section4}
-            ref={imgedown}
+           
             style={containerdown}
           >
             <img
