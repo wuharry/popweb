@@ -1,6 +1,6 @@
 import styles from "./style.module.scss";
 import Buttons from "../../../../components/Button";
-import React, { useEffect, useRef, useState } from "react"; 
+import React, { useEffect, useRef, useState } from "react";
 const LittlePage3 = () => {
   const [scrollY, setScrollY] = useState(0);
   const containerdown = {
@@ -21,8 +21,10 @@ const LittlePage3 = () => {
   useEffect(() => {
     const handleScroll = () => {
       // 開始時圖片有偏差,當瀏覽器視窗底部等於分頁3時偏差修正
-      // const windowBotton = window.scrollY + window.innerHeight;//當瀏覽器視窗底部
-      setScrollY((window.scrollY / 10)-200);
+      const windowBotton = window.scrollY + window.innerHeight; //當瀏覽器視窗底部
+      if (windowBotton <= slideInRef.current.offsetHeight * 4) {
+        setScrollY(window.scrollY / 10 - 200);
+      }
     };
     window.addEventListener("scroll", handleScroll);
   }, []);
