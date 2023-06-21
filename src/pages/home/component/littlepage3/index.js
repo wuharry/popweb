@@ -1,6 +1,6 @@
 import styles from "./style.module.scss";
 import Buttons from "../../../../components/Button";
-import React, { useEffect, useRef, useState } from "react"; 
+import React, { useEffect, useRef, useState } from "react";
 const LittlePage3 = () => {
   const [scrollY, setScrollY] = useState(0);
   const containerdown = {
@@ -16,14 +16,16 @@ const LittlePage3 = () => {
     transform: `translate(0, ${scrollY}%)`,
   };
   const slideInRef = useRef(null);
-  const imgeup = useRef(null);
-  const imgedown = useRef(null);
   useEffect(() => {
     const handleScroll = () => {
       // 開始時圖片有偏差,當瀏覽器視窗底部等於分頁3時偏差修正
-      const windowBotton = window.scrollY + window.innerHeight;//當瀏覽器視窗底部
-      if (windowBotton<=window.innerWidth+slideInRef.current.offsetTop) {
-        setScrollY((window.scrollY / 10)-200);
+      const windowBotton = window.scrollY + window.innerHeight; //當瀏覽器視窗底部
+      if (
+        windowBotton <=
+          window.innerWidth + slideInRef.current.offsetTop - 500 &&
+        window.innerWidth > 1000
+      ) {
+        setScrollY(window.scrollY / 10 - 200);
       }
     };
     window.addEventListener("scroll", handleScroll);
@@ -34,11 +36,7 @@ const LittlePage3 = () => {
     <>
       <div className={styles.context} ref={slideInRef}>
         <div className={styles.image_context}>
-          <div
-            className={styles.imge_section1}
-           
-            style={containerup}
-          >
+          <div className={styles.imge_section1} style={containerup}>
             <img
               className={styles.images}
               src="./images/thumbnail_small.avif"
@@ -52,11 +50,7 @@ const LittlePage3 = () => {
               src="./images/thumbnail_small 3.avif"
             />
           </div>
-          <div
-            className={styles.imge_section2}
-           
-            style={containerdown}
-          >
+          <div className={styles.imge_section2} style={containerdown}>
             <img
               className={styles.image_template_wapper1}
               src="./images/label_banner.svg"
@@ -64,11 +58,7 @@ const LittlePage3 = () => {
             />
             {/* Img的tag可以使用svg圖檔,alt是備註 */}
           </div>
-          <div
-            className={styles.imge_section3}
-           
-            style={containerup}
-          >
+          <div className={styles.imge_section3} style={containerup}>
             <img
               className={styles.images}
               src="./images/thumbnail_medium.avif"
@@ -82,11 +72,7 @@ const LittlePage3 = () => {
               src="./images/thumbnail_medium3.avif"
             />
           </div>
-          <div
-            className={styles.imge_section4}
-           
-            style={containerdown}
-          >
+          <div className={styles.imge_section4} style={containerdown}>
             <img
               className={styles.images}
               src="./images/thumbnail_medium4.avif"
