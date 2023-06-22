@@ -32,6 +32,13 @@ const LittlePage2 = () => {
             <h3>Robust RSVP Management Tools</h3>
             <p>See who has responded, added plus-ones and opened invites.</p>
           </div>
+          {/* 滑動點 */}
+          <div className={styles.dots_container}>
+            <span class={styles.dot}></span>
+            <span class={styles.dot}></span>
+            <span class={styles.dot}></span>
+            <span class={styles.dot}></span>
+          </div>
         </div>
       </div>
     </>

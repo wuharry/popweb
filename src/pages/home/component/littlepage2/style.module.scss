@@ -1,7 +1,7 @@
 .contain {
   width: 100%;
   min-width: 20rem;
-  height: 28rem;
+  height: auto;
   background-color: white;
   overflow: hidden;
   text-align: center;
@@ -34,11 +34,39 @@
   align-content: stretch;
   justify-content: space-between;
   margin-bottom: 4em;
+  overflow: hidden;
 
   .feature {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 20%;
     flex: 0 1 20%;
     text-align: center;
+
+  }
+}
+.dots_container {
+  display: none;
+}
+.dot {
+  background: transparent;
+  border: 1px solid #1f222c;
+  border-radius: 50%;
+  display: block;
+  height: 0.75em;
+  margin: 0 0.4em em;
+  padding: 0;
+  width: 0.75em;
+}
+
+@media (max-width: 930px) {
+
+}
+@media (max-width: 576px) {
+  .feature_wrapper{
+    flex-wrap: nowrap;
+    // overflow-x: scroll;
+  }
+  .dots_container {
+    display: block;
   }
 }
