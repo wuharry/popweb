@@ -34,10 +34,10 @@ const LittlePage2 = () => {
           </div>
           {/* 滑動點 */}
           <div className={styles.dots_container}>
-            <span class={styles.dot}></span>
-            <span class={styles.dot}></span>
-            <span class={styles.dot}></span>
-            <span class={styles.dot}></span>
+            <span className={styles.dot}></span>
+            <span className={styles.dot}></span>
+            <span className={styles.dot}></span>
+            <span className={styles.dot}></span>
           </div>
         </div>
       </div>

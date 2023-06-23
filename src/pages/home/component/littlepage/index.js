@@ -16,7 +16,7 @@ const LittlePage = ({ context, buttonON }) => {
         <div className={styles.theme}>
           <div className={styles.pictures}>
             <picture
-              srcset="./images/theme_1_thumbnail@1x.avif"
+              srcSet="./images/theme_1_thumbnail@1x.avif"
               media="(min-width: 800px)"
             >
               <img
@@ -28,7 +28,7 @@ const LittlePage = ({ context, buttonON }) => {
 
           <div className={styles.pictures}>
             <picture
-              srcset="./images/theme_5_thumbnail@1x.avif"
+              srcSet="./images/theme_5_thumbnail@1x.avif"
               media="(min-width: 800px)"
             >
               <img
@@ -40,7 +40,7 @@ const LittlePage = ({ context, buttonON }) => {
 
           <div className={styles.pictures}>
             <picture
-              srcset="./images/theme_12_thumbnail@1x.avif"
+              srcSet="./images/theme_12_thumbnail@1x.avif"
               media="(min-width: 800px)"
             >
               <img
@@ -52,7 +52,7 @@ const LittlePage = ({ context, buttonON }) => {
 
           <div className={styles.pictures}>
             <picture
-              srcset="./images/theme_7_thumbnail@1x.avif"
+              srcSet="./images/theme_7_thumbnail@1x.avif"
               media="(min-width: 800px)"
             >
               <img
@@ -64,7 +64,7 @@ const LittlePage = ({ context, buttonON }) => {
 
           <div className={styles.pictures}>
             <picture
-              srcset="./images/theme_9_thumbnail@1x.avif"
+              srcSet="./images/theme_9_thumbnail@1x.avif"
               media="(min-width: 800px)"
             >
               <img
@@ -76,7 +76,7 @@ const LittlePage = ({ context, buttonON }) => {
 
           <div className={styles.pictures}>
             <picture
-              srcset="./images/theme_6_thumbnail@1x.avif"
+              srcSet="./images/theme_6_thumbnail@1x.avif"
               media="(min-width: 800px)"
             >
               <img

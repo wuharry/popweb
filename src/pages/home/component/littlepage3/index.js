@@ -20,7 +20,11 @@ const LittlePage3 = () => {
     const handleScroll = () => {
       // 開始時圖片有偏差,當瀏覽器視窗底部等於分頁3時偏差修正
       const windowBotton = window.scrollY + window.innerHeight; //當瀏覽器視窗底部
-      if (windowBotton <= slideInRef.current.offsetHeight * 4) {
+      // console.log(windowBotton);
+      if (
+        windowBotton <=
+        window.innerWidth + slideInRef.current.offsetTop - 500
+      ) {
         setScrollY(window.scrollY / 10 - 200);
       }
     };

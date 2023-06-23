@@ -27,7 +27,7 @@ const Home = () => {
               <div className={styles.Note}></div>
               {/* 內容 */}
               <picture
-                srcset="./images/hero_desktop_image@0.75x.avif'"
+                srcSet="./images/hero_desktop_image@0.75x.avif'"
                 media="(min-width: 800px)"
               >
                 <img
@@ -40,7 +40,7 @@ const Home = () => {
               <div className={styles.mobile}></div>
               <div className={styles.mobilecontain}>
                 <picture
-                  srcset="./images/hero_mobile_image@0.75x.avif'"
+                  srcSet="./images/hero_mobile_image@0.75x.avif'"
                   media="(min-width: 800px)"
                 >
                   <img
