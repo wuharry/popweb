@@ -1,7 +1,7 @@
 .contain {
-  width: 100%;
-  min-width: 20rem;
-  height: auto;
+  max-width: 100%; /* 图像的最大宽度为父容器的宽度 */
+  height: auto; /* 高度自适应，保持图像比例不变 */
+  max-height: 100%;
   background-color: white;
   overflow: hidden;
   text-align: center;
@@ -42,6 +42,10 @@
     flex: 0 1 20%;
     text-align: center;
 
+    img {
+      max-width: 100%; /* 图像的最大宽度为父容器的宽度 */
+      height: auto; /* 高度自适应，保持图像比例不变 */
+    }
   }
 }
 .dots_container {
@@ -59,14 +63,33 @@
 }
 
 @media (max-width: 930px) {
-
 }
 @media (max-width: 576px) {
-  .feature_wrapper{
+  .contain{
+    max-width: 100vh;
+    overflow: scroll;
+  }
+  .feature_wrapper {
     flex-wrap: nowrap;
-    // overflow-x: scroll;
+    overflow-x: scroll;
+    justify-content: center;
+    align-self: center;
+    .feature {
+      display: none;
+      img{
+        max-width: none;
+      }
+    }
   }
   .dots_container {
-    display: block;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    width: 10em;
+    justify-content: space-around;
+    display: flex;
+    // display: grid;
+    :active{
+      background-color: black;
+    }
   }
 }

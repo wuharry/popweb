@@ -1,6 +1,18 @@
 import styles from "./style.module.scss";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 const LittlePage2 = () => {
+  const dot1 = useRef(null);
+  useEffect(() => {
+    const diviceSizeHandler = () => {
+      const { innerWidth } = window;
+      // console.log(innerWidth);
+      const deviceWidth = 600;
+      if (innerWidth <= deviceWidth) {
+        dot1.current.classList.add(active);
+      }
+    };
+    window.addEventListener("resize", diviceSizeHandler);
+  }, []);
   return (
     <>
       <div className={styles.contain}>
@@ -34,7 +46,7 @@ const LittlePage2 = () => {
           </div>
           {/* 滑動點 */}
           <div className={styles.dots_container}>
-            <span className={styles.dot}></span>
+            <span className={styles.dot} ref={dot1}></span>
             <span className={styles.dot}></span>
             <span className={styles.dot}></span>
             <span className={styles.dot}></span>
