@@ -8,7 +8,7 @@ const LittlePage2 = () => {
       // console.log(innerWidth);
       const deviceWidth = 600;
       if (innerWidth <= deviceWidth) {
-        dot1.current.classList.add(active);
+        dot1.current.classList.add('active');
       }
     };
     window.addEventListener("resize", diviceSizeHandler);
