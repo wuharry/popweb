@@ -1,18 +1,30 @@
 import styles from "./style.module.scss";
-import React, { useEffect, useRef } from "react";
+import React, { useCallback, useEffect, useRef } from "react";
 const LittlePage2 = () => {
-  const dot1 = useRef(null);
+  const dot = useRef([]);
+
   useEffect(() => {
-    const diviceSizeHandler = () => {
-      const { innerWidth } = window;
-      // console.log(innerWidth);
-      const deviceWidth = 600;
-      if (innerWidth <= deviceWidth) {
-        dot1.current.classList.add('active');
-      }
-    };
-    window.addEventListener("resize", diviceSizeHandler);
+    // 初始時新增黑點
+    const { innerWidth } = window;
+    const deviceWidth = 600;
+    if (innerWidth <= deviceWidth) {
+      dot.current[0].classList.add(styles.active);
+    }
+    //
   }, []);
+  const setDot = useCallback((node) => {
+    if (node && !dot.current.includes(node)) {
+      dot.current.push(node);
+    } 
+  }, []);
+  const handleClick = (refName) => {
+    // 处理值变化事件的逻辑
+    const map =dot.current
+    map.forEach((element)=>{
+      element.classList.remove(styles.active)
+    })
+    map[refName-1].classList.add(styles.active);
+  };
   return (
     <>
       <div className={styles.contain}>
@@ -46,10 +58,34 @@ const LittlePage2 = () => {
           </div>
           {/* 滑動點 */}
           <div className={styles.dots_container}>
-            <span className={styles.dot} ref={dot1}></span>
-            <span className={styles.dot}></span>
-            <span className={styles.dot}></span>
-            <span className={styles.dot}></span>
+            <span
+              className={styles.dot}
+              ref={setDot}
+              onClick={() => {
+                handleClick(1);
+              }}
+            ></span>
+            <span
+              className={styles.dot}
+              ref={setDot}
+              onClick={() => {
+                handleClick(2);
+              }}
+            ></span>
+            <span
+              className={styles.dot}
+              ref={setDot}
+              onClick={() => {
+                handleClick(3);
+              }}
+            ></span>
+            <span
+              className={styles.dot}
+              ref={setDot}
+              onClick={() => {
+                handleClick(4);
+              }}
+            ></span>
           </div>
         </div>
       </div>
