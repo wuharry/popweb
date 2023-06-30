@@ -65,19 +65,35 @@
 @media (max-width: 930px) {
 }
 @media (max-width: 576px) {
-  .contain{
+  .contain {
     max-width: 100vh;
     overflow: scroll;
+  }
+  .slide {
+    transform: translate3d(-310px,0px,0px);
+    transition: all 0s ease 0s;
+  }
+  .feature_wrapper::-webkit-scrollbar {
+    width: 0em;
   }
   .feature_wrapper {
     flex-wrap: nowrap;
     overflow-x: scroll;
-    justify-content: center;
-    align-self: center;
+    display: flex;
+    scroll-snap-type: x mandatory;
+
     .feature {
-      display: none;
-      img{
+      margin: 0px;
+      padding: 0px;
+      flex: 0 0 100%;
+      scroll-snap-align: center;
+      scroll-snap-stop: always;
+      img {
         max-width: none;
+        object-fit: cover
+      }
+      .active {
+        display: block;
       }
     }
   }
@@ -87,7 +103,10 @@
     width: 10em;
     justify-content: space-around;
     display: flex;
-    .active{
+    position: relative;
+    left: 6em;
+    bottom: 2em;
+    .active {
       background-color: black;
       transition: all 0.2s ease-in;
     }
