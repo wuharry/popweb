@@ -22,10 +22,17 @@ const LittlePage3 = () => {
     const handleScroll = () => {
       // 開始時圖片有偏差,當瀏覽器視窗底部等於分頁3時偏差修正
       const windowBotton = window.scrollY + window.innerHeight; //當瀏覽器視窗底部
-      if (innerWidth >= 1100) {
-        stopPoint = 750;
-      } else {
-        stopPoint = 550;
+      if (innerWidth > 1300) {
+        console.log(`觸發點1`);
+        stopPoint = 900;
+      }
+      if (innerWidth <= 1300) {
+        stopPoint = 500;
+  
+      }
+      if (innerWidth <= 400) {
+        // console.log;
+        stopPoint = 100;
       }
       if (
         windowBotton <=
