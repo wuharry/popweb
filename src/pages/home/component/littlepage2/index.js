@@ -76,6 +76,7 @@ const LittlePage2 = () => {
           <span className={styles.dot} ref={setDot}></span>
           <span className={styles.dot} ref={setDot}></span>
           <span className={styles.dot} ref={setDot}></span>
+
         </div>
       </div>
     </>
